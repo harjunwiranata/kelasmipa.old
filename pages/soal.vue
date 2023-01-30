@@ -6,28 +6,29 @@
 				<h1
 					class="lg:text-5xl text-2xl leading-normal font-semibold text-center"
 				>
-					Tempat Belajar Bersama Siswa MIPA
+					Latihan Soal
 				</h1>
 				<h1
-					class="lg:text-6xl text-4xl text-center leading-relaxed font-bold rainbow-text"
+					class="lg:text-6xl text-4xl text-center leading-normal font-bold rainbow-text"
 				>
-					Math and Science
+					Try and Try Again
 				</h1>
 			</section>
 			<section class="lg:px-[15%] px-[5%] lg:pt-20 pt-14">
 				<p
 					class="text-center uppercase font-medium tracking-wider mb-10"
 				>
-					Blog
+					Soal
 				</p>
-				<div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+				<div class="grid grid-cols-1 lg:grid-cols-4 gap-2">
 					<template
 						v-for="(b, i) in blogNav[0].children"
 						:key="`blogNavItem-${b._path}-${i}`"
 					>
 						<div class="px-7 py-5 rounded-lg border-2">
-							<h2 class="text-lg font-semibold rainbow-text">
+							<h2 class="flex justify-between text-lg font-semibold rainbow-text">
 								{{ b.title }}
+								<span>>></span>
 							</h2>
 							<!-- Loop over files inside the content dir -->
 							<ul
@@ -39,7 +40,7 @@
 									:key="`childNav-${child._path}-${k}-${i}`"
 								>
 									<li
-										class="list-item text-base hover:text-primary-900 transition-all"
+										class="list-none text-base hover:text-primary-900transition-all"
 									>
 										<NuxtLink :to="`${child._path}`">
 											{{ child.title }}
@@ -49,9 +50,9 @@
 							</ul>
 							<ul v-else class="list-disc list-inside mt-4 pl-2 space-y-3">
 								<li
-									class="list-item text-base hover:text-primary-900 transition-all"
+									class="list-none text-base hover:text-primary-900transition-all"
 								>
-									<NuxtLink :to="`/blog${b._path}`"> Get Started </NuxtLink>
+									<NuxtLink :to="`${b._path}`"> Get Started </NuxtLink>
 								</li>
 							</ul>
 						</div>
@@ -63,8 +64,8 @@
 </template>
 
 <script setup>
-	const { data: blogNav } = await useAsyncData("navigation", () => {
-		return fetchContentNavigation(queryContent("blog"));
+	const { data: blogNav } = await useAsyncData("soal", () => {
+		return fetchContentNavigation(queryContent("soal"));
 	});
 	useHead({
 		title: "Content Blog",

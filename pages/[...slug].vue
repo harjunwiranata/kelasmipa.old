@@ -6,7 +6,7 @@
 				class="lg:pt-20 pt-10 relative flex items-start lg:space-x-10 px-[5%] lg:px-[10%]"
 			>
 				<div
-					class="w-[300px] p-5 sticky top-3 border rounded-md bg-white hidden lg:block"
+					class="w-[300px] p-5 sticky top-3 border rounded-md bg-white dark:bg-slate-600 hidden lg:block"
 				>
 					<h2 class="text-sm font-bold mb-4">Table Of Contents</h2>
 					<ul class="space-y-2">
@@ -27,7 +27,7 @@
 				</div>
 				<ClientOnly>
 					<ContentRenderer
-						class="prose lg:prose-base prose-sm prose-slate blog-link pr-7 max-w-screen"
+						class="prose lg:prose-base prose-sm prose-slate dark:prose-invert blog-link pr-7 max-w-screen"
 						:value="blog"
 					>
 						<template #empty>
@@ -41,9 +41,10 @@
 </template>
 
 <script setup>
-	const slug = useRoute().params.slug.toString().replace(/,/g, "/");
-	const { data: blog } = await useAsyncData(slug, () => {
-		return queryContent(slug).findOne();
+	const slug = useRoute().params.slug
+	const path = slug.toString().replace(/,/g, "/");
+	const { data: blog } = await useAsyncData(path, () => {
+		return queryContent(path).findOne();
 	});
 	const toc = computed(() => {
 		if (!blog.value) return [];
@@ -66,6 +67,7 @@
 </script>
 
 <style scoped>
+
 	.blog-link {
 		@apply prose-a:text-primary before:prose-headings:content-['#'] before:prose-headings:mr-1 before:prose-headings:text-primary before:prose-h1:content-[''];
 	}
