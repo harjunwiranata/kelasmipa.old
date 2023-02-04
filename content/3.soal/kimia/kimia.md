@@ -1,9 +1,12 @@
-# Nuxt Content
+# Contoh Soal Stokiometri
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
+## Reaksi Pembakaran
+Gas metana dibakar sempurna dengan oksigen. Reaksi yang terjadi adalah:
+$$
+\ce{CH4_{(g)} + O2_{(g)} -> CO2_{(g)} +H2O_{(g)}}
+$$
+Bila metana yang dibakar 3 liter, berapa liter gas oksigen yang diperlukan dan berapa liter gas $CO_2$ dan $H_2 O$ yang dihasilkan jika semua volume diukur pada suhu dan tekanan yang sama?
 
-Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[...slug].vue` component.
+::pembahasan
 
----
-
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+::

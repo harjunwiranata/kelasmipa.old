@@ -1,9 +1,9 @@
 <template>
-			<section class="lg:px-[15%] px-[5%]\">
+			<section class="lg:px-[15%] px-[5%]">
 				<h1
 					class="lg:text-5xl text-2xl leading-normal font-semibold text-center"
 				>
-					Latihan Soal
+					Sumber Materi
 				</h1>
 				<h1
 					class="lg:text-6xl text-4xl text-center leading-normal font-bold rainbow-text"
@@ -11,12 +11,13 @@
 					Matematika dan IPA
 				</h1>
 			</section>
-			<NavCard title="Soal" root="soal" />
+			
+			<NavCard title="Materi" root="materi" />
 </template>
 
 <script setup>
-	const { data: blogNav } = await useAsyncData("soal", () => {
-		return fetchContentNavigation(queryContent("soal"));
+	const { data: blogNav } = await useAsyncData("materi", () => {
+		return fetchContentNavigation(queryContent("materi"));
 	});
 	useHead({
 		title: "Content Blog",

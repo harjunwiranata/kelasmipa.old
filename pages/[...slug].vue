@@ -1,9 +1,7 @@
 <template>
 	<div>
-		<Nav />
-		<main>
 			<article
-				class="lg:pt-20 pt-10 relative flex items-start lg:space-x-10 px-[5%] lg:px-[10%]"
+				class="pt-8 relative flex items-start lg:space-x-10 px-[5%] lg:px-[10%]"
 			>
 				<div
 					class="w-[300px] p-5 sticky top-3 border rounded-md bg-white dark:bg-slate-600 hidden lg:block"
@@ -25,7 +23,6 @@
 						</template>
 					</ul>
 				</div>
-				<ClientOnly>
 					<ContentRenderer
 						class="prose lg:prose-base prose-sm prose-slate dark:prose-invert blog-link pr-7 max-w-screen"
 						:value="blog"
@@ -34,9 +31,7 @@
 							<p>No content found.</p>
 						</template>
 					</ContentRenderer>
-				</ClientOnly>
 			</article>
-		</main>
 	</div>
 </template>
 
@@ -67,8 +62,4 @@
 </script>
 
 <style scoped>
-
-	.blog-link {
-		@apply prose-a:text-primary before:prose-headings:content-['#'] before:prose-headings:mr-1 before:prose-headings:text-primary before:prose-h1:content-[''];
-	}
 </style>
