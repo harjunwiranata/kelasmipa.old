@@ -16,6 +16,6 @@
 
 <script setup>
 	useHead({
-		title: "Content Blog",
+		title: "Kelas MIPA",
 	});
 </script>

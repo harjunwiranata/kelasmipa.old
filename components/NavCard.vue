@@ -2,11 +2,9 @@
 
 const props = defineProps({
     title: String,
-    root: String,
-    col: String
+    root: String
 })
 
-const column = ref(`lg:grid-cols-${props.col}`)
 const { data: blogNav } = await useAsyncData("navigation", () => {
 		return fetchContentNavigation(queryContent(props.root));
 	});</script>
@@ -18,7 +16,7 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
     >
         {{title}}
     </p>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 {{ column }}" :class="column">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <template
             v-for="(b, i) in blogNav[0].children"
             :key="`blogNavItem-${b._path}-${i}`"

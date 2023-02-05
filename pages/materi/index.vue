@@ -20,6 +20,6 @@
 		return fetchContentNavigation(queryContent("materi"));
 	});
 	useHead({
-		title: "Content Blog",
+		title: "Materi - Kelas MIPA",
 	});
 </script>

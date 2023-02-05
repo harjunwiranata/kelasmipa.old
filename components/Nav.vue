@@ -14,14 +14,14 @@
 						<span class="font-medium max-sm:hidden"> {{ n.name }}</span>
 					</div>
 					<div
-						class="h-0.5 w-4/5 bg-primary mt-1 -translate-y-full scale-0 group-hover:scale-100 group-hover:translate-y-full transition-all"
+						class="h-0.5 w-full bg-primary mt-1 -translate-y-full scale-0 group-hover:scale-100 group-hover:translate-y-full transition-all"
 					></div>
 				</NuxtLink>
 			</template>
 			<button @click="changeMode" class="inline-block nav-link hover:text-primary group">
 			<Icon v-if="mode.preference == 'dark'" icon="carbon:sun" class="w-6 h-6"/>
 			<Icon v-else icon="carbon:moon" class="w-6 h-6"/><div
-						class="h-0.5 w-4/5 bg-primary mt-1 -translate-y-full scale-0 group-hover:scale-100 group-hover:translate-y-full transition-all"
+						class="h-0.5 w-full bg-primary mt-1 -translate-y-full scale-0 group-hover:scale-100 group-hover:translate-y-full transition-all"
 					></div>
 			</button>
 			
@@ -44,7 +44,7 @@
 		},
 		{
 			name: "Soal",
-			icon: "carbon:request-quote",
+			icon: "carbon:calculation",
 			link: "/soal",
 		},
 	];
