@@ -1,4 +1,5 @@
-<template> <footer class="border-t lg:border-gray-900/10 dark:border-gray-50/[0.2] mt-4">
+<template>
+<footer class="border-t lg:border-gray-900/10 dark:border-gray-50/[0.2] mt-4 static bottom-0">
     <section
       class="max-w-8xl mx-auto px-4 lg:px-8 flex-1 flex w-full space-x-20"
     >

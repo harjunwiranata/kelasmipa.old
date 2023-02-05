@@ -10,18 +10,13 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
 	});</script>
 
 <template>
-<section class="lg:px-[15%] px-[5%] lg:pt-16 pt-8">
-    <p
-        class="text-center uppercase font-medium tracking-wider mb-10"
-    >
-        {{title}}
-    </p>
+<section class="lg:px-[15%] px-[5%] lg:pt-12 pt-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <template
             v-for="(b, i) in blogNav[0].children"
             :key="`blogNavItem-${b._path}-${i}`"
         >
-            <div class="px-7 py-5 rounded-lg border-2">
+            <div class="px-8 py-4 rounded-lg border-2 border-sub">
                 <h2 class="text-lg font-semibold rainbow-text">
                     {{ b.title }}
                 </h2>
@@ -35,15 +30,15 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
                         :key="`childNav-${child._path}-${k}-${i}`"
                     >
                         <li
-                            class="list-none text-base hover:text-primary-900 transition-all"
+                            class="list-none text-base hover:text-primary transition-all"
                         >
                             <NuxtLink :to="`${child._path}`">
                                 {{ child.title }}
                             </NuxtLink>
                         </li>
                     </template>
-                        <li class="list-none text-base hover:text-primary-900 transition-all float-right">
-                            <NuxtLink :to="b._path">
+                        <li class="list-none text-base hover:text-primary transition-all float-right text-accent">
+                            <NuxtLink :to="b._path" class=" text-bold">
                                 Lebih banyak >>
                             </NuxtLink>
                         </li>

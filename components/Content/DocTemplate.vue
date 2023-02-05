@@ -7,7 +7,7 @@
 				class="pt-2 relative flex items-start lg:space-x-10 "
 			>
 				<div
-					class="w-[300px] p-5 sticky top-5 border rounded-md bg-white dark:bg-slate-600 hidden lg:block"
+					class="w-[300px] p-5 sticky top-5 border border-sub rounded-md bg-slate-200 dark:bg-slate-600 hidden lg:block"
 				>
 					<h2 class="text-sm font-bold mb-4">Daftar Isi</h2>
 					<ul class="space-y-2">

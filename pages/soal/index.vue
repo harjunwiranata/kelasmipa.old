@@ -19,6 +19,6 @@
 		return fetchContentNavigation(queryContent("soal"));
 	});
 	useHead({
-		title: "Content Blog",
+		title: "Latihan Soal - Kelas MIPA",
 	});
 </script>

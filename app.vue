@@ -1,6 +1,6 @@
 
 <template>
-	<div class="dark:bg-slate-800 dark:text-white min-h-screen">
+	<div class="dark:bg-dark dark:text-white min-h-screen bg-white min-h-screen">
 		<NuxtLayout>
 		<NuxtPage />
 		</NuxtLayout>

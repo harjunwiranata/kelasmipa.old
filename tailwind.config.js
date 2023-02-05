@@ -15,11 +15,29 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+				//primary: {
+				//	DEFAULT: colors.fuchsia[700],
+				//	...colors.fuchsia,
+				//
+				//},
 				primary: {
-					DEFAULT: colors.fuchsia[700],
-					...colors.fuchsia,
-					
+					DEFAULT: "#ED254E",
 				},
+				sub: {
+					DEFAULT: "#985ad5"
+				},
+				accent: {
+					DEFAULT: "#FF9F1C"
+				},
+				dark: {
+					DEFAULT: "#011936",
+				},
+				subDark: {
+					DEFAULT: "#022E64"
+				},
+				white: {
+					DEFAULT: "#fbfef9",
+				}
 			},
 			fontFamily: {
 				sans: ["Lato","sans-serif"],

@@ -3,18 +3,18 @@
 		<NuxtLink to="/" class="font-bold text-2xl lg:text-4xl">
 			Kelas <span class="text-primary">MIPA</span>
 		</NuxtLink>
-		<nav class="flex items-center space-x-7 text-gray-800 dark:text-white">
+		<nav class="flex items-center space-x-7 text-dark dark:text-white">
 			<template v-for="(n, i) in links" :key="`navLink-${i}`">
 				<NuxtLink
 					:to="n.link"
-					class="inline-block nav-link hover:text-primary group"
+					class="inline-block nav-link hover:text-accent group"
 				>
 					<div class="flex items-center space-x-2">
 						<Icon :icon="n.icon" class="w-6 h-6" />
 						<span class="font-medium max-sm:hidden"> {{ n.name }}</span>
 					</div>
 					<div
-						class="h-0.5 w-full bg-primary mt-1 -translate-y-full scale-0 group-hover:scale-100 group-hover:translate-y-full transition-all"
+						class="h-0.5 w-full bg-accent mt-1 -translate-y-full scale-0 group-hover:scale-100 group-hover:translate-y-full transition-all"
 					></div>
 				</NuxtLink>
 			</template>
