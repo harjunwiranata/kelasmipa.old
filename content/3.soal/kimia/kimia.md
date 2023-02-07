@@ -1,14 +1,25 @@
 # Contoh Soal Stokiometri
 
-## Reaksi Pembakaran
-Gas metana dibakar sempurna dengan oksigen. Reaksi yang terjadi adalah:
-$$
-\ce{CH4_{(g)} + O2_{(g)} -> CO2_{(g)} +H2O_{(g)}}
-$$
-Bila metana yang dibakar 3 liter, berapa liter gas oksigen yang diperlukan dan berapa liter gas $CO_2$ dan $\ce{H2O}$ yang dihasilkan jika semua volume diukur pada suhu dan tekanan yang sama?
+_Unsur-unsur di bawah ini yang memiliki enam elektron valensi adalah.._
+
+a. $\ce{^{8}O}$
+
+b. $\ce{^{29}Cu}$
+
+c. $\ce{^{6}C}$
+
+d. $\ce{^{14}Si}$
+
+e. $\ce{^{11}Na}$
 
 ::kunci
-$\ce{O2} = 6l$
+
+a. $\ce{^{8}O}$
+
 ::
+
 ::pembahasan
-::
+
+Konfigurasi elektron pada $\ce{^{8}O}$ yang memiliki total 8 elektron adalah: 2s6p, elektron terluar (valensi) dari atom ini adalah 6 buah. Atom-atom lain yang memiliki jumlah valensi yang sama ada pada golongan yang sama dengan $\ce{^{8}O}$, antara lain $\ce{^{16}P}$
+
+\
