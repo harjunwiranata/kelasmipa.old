@@ -15,7 +15,6 @@ const props = defineProps(['root', 'title', 'filter'])
       <span class="text-base mr-3">
       Filter:
       </span>
-
       <FormSelectBox />
 </div></div>
     </div>

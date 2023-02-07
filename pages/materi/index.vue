@@ -16,9 +16,6 @@
 </template>
 
 <script setup>
-	const { data: blogNav } = await useAsyncData("materi", () => {
-		return fetchContentNavigation(queryContent("materi"));
-	});
 	useHead({
 		title: "Materi - Kelas MIPA",
 	});

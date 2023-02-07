@@ -1,6 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	modules: ["@nuxt/content", "@nuxtjs/tailwindcss", '@nuxtjs/color-mode'],
+	modules: ["@nuxt/content", "@nuxtjs/tailwindcss", '@nuxtjs/color-mode', '@nuxtjs/robots','nuxt-simple-sitemap'],
 	colorMode: {
 		classSuffix: ''
 	},
@@ -26,5 +26,10 @@ export default defineNuxtConfig({
 			script: [
 			]
 		}
-	}
+	},
+	runtimeConfig: {
+		public: {
+		  siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com',
+		}
+	  },
 });
