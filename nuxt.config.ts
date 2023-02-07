@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 				searchDepth: 3,
 			},
 			remarkPlugins: ['remark-math'],
-			rehypePlugins: ['rehype-mathjax'],
+			rehypePlugins: ['rehype-katex', 'katex/dist/contrib/mhchem.js'],
 		},
 		highlight: {
 			theme: "dracula-soft",
@@ -19,5 +19,12 @@ export default defineNuxtConfig({
 	},
 	css: [
 		'~/assets/css/style.css',
-	]
+		'katex/dist/katex.min.css'
+	],
+	app: {
+		head: {
+			script: [
+			]
+		}
+	}
 });

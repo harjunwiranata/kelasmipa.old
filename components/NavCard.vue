@@ -16,7 +16,7 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
             v-for="(b, i) in blogNav[0].children"
             :key="`blogNavItem-${b._path}-${i}`"
         >
-            <div class="px-8 py-4 rounded-lg border-2 border-sub">
+            <NuxtLink class="px-8 py-4 cursor-default rounded-lg border-2 border-sub hover:border-accent" :to="b._path">
                 <h2 class="text-lg font-semibold rainbow-text">
                     {{ b.title }}
                 </h2>
@@ -50,7 +50,7 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
                         <NuxtLink :to="`/${root}/${b._path}`"> Get Started </NuxtLink>
                     </li>
                 </ul>
-            </div>
+            </NuxtLink>
         </template>
     </div>
 </section>
