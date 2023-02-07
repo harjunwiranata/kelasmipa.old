@@ -1,23 +1,19 @@
 <template>
-			<section class="lg:px-[15%] px-[5%]">
+	<section class="lg:px-[15%] px-[5%]">
 
-			<Background />
-				<h1
-					class="lg:text-5xl text-2xl leading-normal font-semibold text-center"
-				>
-					Informasi Seputar Bidang
-				</h1>
-				<h1
-					class="lg:text-6xl text-4xl text-center leading-relaxed font-bold rainbow-text"
-				>
-					Matematika dan IPA
-				</h1>
-			</section>
-			<NavCard title="Blog" root="blog"/>
+		<Background />
+		<h1 class="lg:text-5xl text-2xl leading-normal font-semibold text-center">
+			Informasi Seputar Bidang
+		</h1>
+		<h1 class="lg:text-6xl text-4xl text-center leading-relaxed font-bold rainbow-text">
+			Matematika dan IPA
+		</h1>
+	</section>
+	<NavCard title="Blog" root="blog" />
 </template>
 
 <script setup>
-	useHead({
-		title: "Kelas MIPA",
-	});
+useHead({
+	title: "Kelas MIPA",
+});
 </script>

@@ -33,8 +33,8 @@ const toggle = () => {
         text-base text-left
         transition
       " type="button">
-      <span v-if="!toggled">Lihat Pembahasan</span>
-      <span v-else>Sembunyikan Pembahasan</span>
+        <span v-if="!toggled">Lihat Pembahasan</span>
+        <span v-else>Sembunyikan Pembahasan</span>
       </button>
     </div>
     <div id="pembahasan" ref="pembahasan" hidden>
