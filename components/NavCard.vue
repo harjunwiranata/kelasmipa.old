@@ -7,23 +7,27 @@ const props = defineProps({
 
 const { data: blogNav } = await useAsyncData("navigation", () => {
 		return fetchContentNavigation(queryContent(props.root));
-	});</script>
+	});
+    
+</script>
 
 <template>
 <section class="lg:px-[15%] px-[5%] lg:pt-12 pt-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        
         <template
             v-for="(b, i) in blogNav[0].children"
             :key="`blogNavItem-${b._path}-${i}`"
         >
+        <ClientOnly>
             <NuxtLink class="px-8 py-4 cursor-default rounded-lg border-2 border-sub hover:border-accent" :to="b._path">
                 <h2 class="text-lg font-semibold rainbow-text">
                     {{ b.title }}
                 </h2>
                 <!-- Loop over files inside the content dir -->
                 <ul
-                    v-if="b.children"
                     class="list-disc list-inside mt-4 pl-2 space-y-3"
+                    :id="b.children"
                 >
                     <template
                         v-for="(child, k) in b.children"
@@ -43,14 +47,8 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
                             </NuxtLink>
                         </li>
                 </ul>
-                <ul v-else class="list-disc list-inside mt-4 pl-2 space-y-3">
-                    <li
-                        class="list-item text-base text-amber-400 hover:text-primary-900 transition-all"
-                    >
-                        <NuxtLink :to="`/${root}/${b._path}`"> Get Started </NuxtLink>
-                    </li>
-                </ul>
             </NuxtLink>
+        </ClientOnly>
         </template>
     </div>
 </section>

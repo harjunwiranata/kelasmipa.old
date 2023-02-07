@@ -13,7 +13,7 @@
 					Matematika dan IPA
 				</h1>
 			</section>
-			<NavCard title="Blog" root="blog" col="3" />
+			<NavCard title="Blog" root="blog"/>
 </template>
 
 <script setup>
