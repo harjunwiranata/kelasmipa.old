@@ -20,6 +20,7 @@ const toggle = () => {
 
 <template>
   <div class="
+  w-full
         border
         rounded
         border-accent
@@ -39,7 +40,7 @@ const toggle = () => {
     </div>
     <div id="pembahasan" ref="pembahasan" hidden>
       <div class="py-4 px-2">
-        <slot name="diketahui" />
+        <slot />
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
 	<ContentDoc>
 		<template #default="{ doc }">
-			<div class="max-w-4xl mx-auto">
+			<div class="px-[3%] lg:px-[15%] mx-auto">
 				<ContentTitle :text="doc.title" />
 				<article class="pt-2 relative flex items-start lg:space-x-10 ">
 					<div
@@ -20,7 +20,7 @@
 
 					</div>
 					<ContentRenderer
-						class="prose list-none lg:prose-base prose-sm prose-slate dark:prose-invert blog-link px-2 max-w-screen"
+						class="prose list-none lg:prose-base prose-sm prose-slate dark:prose-invert blog-link px-2 flex-grow"
 						:value="doc">
 					</ContentRenderer>
 				</article>

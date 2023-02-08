@@ -23,7 +23,13 @@ export default defineNuxtConfig({
 	],
 	app: {
 		head: {
-			script: [
+			script: [{
+				src:"https://www.googletagmanager.com/gtag/js?id=G-S0SBT7P649",
+				async:"true"
+			},
+			{
+				children: "window.dataLayer = window.dataLayer || []\; function gtag(){dataLayer.push(arguments)\;} gtag('js', new Date())\; gtag('config', 'G-S0SBT7P649')\;"
+			}
 			]
 		}
 	},
