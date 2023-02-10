@@ -1,6 +1,5 @@
 <template>
 	<section class="lg:px-[15%] px-[5%]">
-
 		<Background />
 		<h1 class="lg:text-5xl text-2xl leading-normal font-semibold text-center">
 			Informasi Seputar Bidang
@@ -13,6 +12,7 @@
 </template>
 
 <script setup>
+
 useHead({
 	title: "Kelas MIPA",
 });

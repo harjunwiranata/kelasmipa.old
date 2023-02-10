@@ -1,10 +1,26 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import rehypeKatex from 'rehype-katex'
+import vuefire from 'nuxt-vuefire'
 
 export default defineNuxtConfig({
-	modules: ["@nuxt/content", "@nuxtjs/tailwindcss", '@nuxtjs/color-mode', '@nuxtjs/robots', 'nuxt-simple-sitemap'],
+	modules: ["@nuxt/content",
+		"@nuxtjs/tailwindcss",
+		'@nuxtjs/color-mode',
+		'@nuxtjs/robots',
+		'nuxt-simple-sitemap',
+		'nuxt-vuefire'],
 	colorMode: {
 		classSuffix: ''
+	},
+	vuefire: {
+		config: {
+			apiKey: "AIzaSyAHyfFhuQhwjTWDaeDN0O2FnEI2PpmG5uA",
+			authDomain: "kelasmipa-id.firebaseapp.com",
+			projectId: "kelasmipa-id",
+			storageBucket: "kelasmipa-id.appspot.com",
+			messagingSenderId: "62139172073",
+			appId: "1:62139172073:web:fee319c790027f0ab95c78",
+			measurementId: "G-HHGQ5H0JQM"
+		}
 	},
 	content: {
 		markdown: {
@@ -13,7 +29,7 @@ export default defineNuxtConfig({
 				searchDepth: 3,
 			},
 			remarkPlugins: ['remark-math'],
-			rehypePlugins: ['rehype-katex','katex/dist/contrib/mhchem.js'],
+			rehypePlugins: ['rehype-katex', 'katex/dist/contrib/mhchem.js'],
 		},
 		highlight: {
 			theme: "dracula-soft",
@@ -27,8 +43,8 @@ export default defineNuxtConfig({
 	app: {
 		head: {
 			script: [{
-				src:process.env.GOOGLE_TAG_URL || '',
-				async:"true"
+				src: process.env.GOOGLE_TAG_URL || '',
+				async: "true"
 			},
 			{
 				children: "window.dataLayer = window.dataLayer || []\; function gtag(){dataLayer.push(arguments)\;} gtag('js', new Date())\; gtag('config', 'G-S0SBT7P649')\;"
@@ -46,4 +62,5 @@ export default defineNuxtConfig({
 			isCustomElement: ((tag) => ["Annotation"].includes(tag))
 		}
 	},
+
 });
