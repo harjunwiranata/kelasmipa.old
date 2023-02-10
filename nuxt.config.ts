@@ -1,6 +1,8 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+import rehypeKatex from 'rehype-katex'
+
 export default defineNuxtConfig({
-	modules: ["@nuxt/content", "@nuxtjs/tailwindcss", '@nuxtjs/color-mode', '@nuxtjs/robots', 'nuxt-simple-sitemap', '@vueuse/nuxt'],
+	modules: ["@nuxt/content", "@nuxtjs/tailwindcss", '@nuxtjs/color-mode', '@nuxtjs/robots', 'nuxt-simple-sitemap'],
 	colorMode: {
 		classSuffix: ''
 	},
@@ -11,11 +13,12 @@ export default defineNuxtConfig({
 				searchDepth: 3,
 			},
 			remarkPlugins: ['remark-math'],
-			rehypePlugins: ['rehype-katex', 'katex/dist/contrib/mhchem.js'],
+			rehypePlugins: ['rehype-katex','katex/dist/contrib/mhchem.js'],
 		},
 		highlight: {
 			theme: "dracula-soft",
 		},
+		locales: ['id']
 	},
 	css: [
 		'~/assets/css/style.css',
@@ -24,7 +27,7 @@ export default defineNuxtConfig({
 	app: {
 		head: {
 			script: [{
-				src:"https://www.googletagmanager.com/gtag/js?id=G-S0SBT7P649",
+				src:process.env.GOOGLE_TAG_URL || '',
 				async:"true"
 			},
 			{
@@ -36,6 +39,11 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com',
+		}
+	},
+	vue: {
+		compilerOptions: {
+			isCustomElement: ((tag) => ["Annotation"].includes(tag))
 		}
 	},
 });

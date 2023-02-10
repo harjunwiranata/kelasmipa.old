@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors");
+
 
 /**@type {import('tailwindcss').Config} */
 module.exports = {
@@ -15,11 +15,6 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				//primary: {
-				//	DEFAULT: colors.fuchsia[700],
-				//	...colors.fuchsia,
-				//
-				//},
 				primary: {
 					DEFAULT: "#ED254E",
 				},
