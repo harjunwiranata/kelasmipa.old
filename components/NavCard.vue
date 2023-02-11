@@ -16,13 +16,13 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
             <template v-for="(b, i) in blogNav[0]?.children" :key="`blogNavItem-${b._path}-${i}`">
-                <ClientOnly>
                     <NuxtLink class="px-8 py-4 cursor-default rounded-lg border-2 border-sub hover:border-accent"
                         :to="b._path">
                         <h2 class="text-lg font-semibold rainbow-text">
                             {{ b.title }}
                         </h2>
                         <!-- Loop over files inside the content dir -->
+                        <ClientOnly>
                         <ul v-if="b.children" class="list-disc list-inside mt-4 pl-2 space-y-3" :id="b.children">
                             <template v-for="(child, k) in b.children" :key="`childNav-${child._path}-${k}-${i}`">
                                 <li class="list-none text-base hover:text-primary transition-all">
@@ -37,9 +37,8 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
                                 </NuxtLink>
                             </li>
                         </ul>
-
-                    </NuxtLink>
                 </ClientOnly>
+                    </NuxtLink>
             </template>
         </div>
     </section>

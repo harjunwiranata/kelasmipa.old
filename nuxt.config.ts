@@ -29,7 +29,7 @@ export default defineNuxtConfig({
 				searchDepth: 3,
 			},
 			remarkPlugins: ['remark-math'],
-			rehypePlugins: ['rehype-katex', 'katex/dist/contrib/mhchem.js'],
+			rehypePlugins: [['rehype-katex', {output: "html"}], 'katex/dist/contrib/mhchem.js'],
 		},
 		highlight: {
 			theme: "dracula-soft",
@@ -62,5 +62,12 @@ export default defineNuxtConfig({
 			isCustomElement: ((tag) => ["Annotation"].includes(tag))
 		}
 	},
-
+	nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+      ]
+    }
+  }
 });
