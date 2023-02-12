@@ -57,8 +57,7 @@ export default defineNuxtConfig({
 		public: {
 			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com',
 			googleAdsense: {
-				id: process.env.GOOGLE_ADSENSE_ID,
-				testMode: process.env.GOOGLE_ADSENSE_TEST_MODE === 'true'
+				id: process.env.GOOGLE_ADSENSE_ID || ''
 			}
 		},
 	},
