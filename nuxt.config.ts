@@ -1,5 +1,5 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import vuefire from 'nuxt-vuefire'
+import firebase from './config/firebase';
 
 export default defineNuxtConfig({
 	modules: ["@nuxt/content",
@@ -8,20 +8,13 @@ export default defineNuxtConfig({
 		'@nuxtjs/robots',
 		'nuxt-simple-sitemap',
 		'nuxt-vuefire',
-		'@nuxtjs/google-adsense'],
+		'@nuxtjs/google-adsense',
+		'@dargmuesli/nuxt-cookie-control'],
 	colorMode: {
 		classSuffix: ''
 	},
 	vuefire: {
-		config: {
-			apiKey: "AIzaSyAHyfFhuQhwjTWDaeDN0O2FnEI2PpmG5uA",
-			authDomain: "kelasmipa-id.firebaseapp.com",
-			projectId: "kelasmipa-id",
-			storageBucket: "kelasmipa-id.appspot.com",
-			messagingSenderId: "62139172073",
-			appId: "1:62139172073:web:fee319c790027f0ab95c78",
-			measurementId: "G-HHGQ5H0JQM"
-		}
+		config: firebase
 	},
 	"google-adsense": {
 		id: process.env.GOOGLE_ADSENSE_ID
@@ -33,7 +26,7 @@ export default defineNuxtConfig({
 				searchDepth: 3,
 			},
 			remarkPlugins: ['remark-math'],
-			rehypePlugins: [['rehype-katex', {output: "htmlyar"}], 'katex/dist/contrib/mhchem.js'],
+			rehypePlugins: [['rehype-katex', {output: "html"}], 'katex/dist/contrib/mhchem.js'],
 		},
 		highlight: {
 			theme: "dracula-soft",

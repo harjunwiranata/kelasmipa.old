@@ -6,6 +6,7 @@
                 <slot />
             </main>
         </div>
+        <Cookie />
         <Footer />
     </div>
 </template>
