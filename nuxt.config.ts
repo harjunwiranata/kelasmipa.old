@@ -23,6 +23,9 @@ export default defineNuxtConfig({
 			measurementId: "G-HHGQ5H0JQM"
 		}
 	},
+	"google-adsense": {
+		id: process.env.GOOGLE_ADSENSE_ID
+	},
 	content: {
 		markdown: {
 			toc: {
@@ -55,10 +58,7 @@ export default defineNuxtConfig({
 	},
 	runtimeConfig: {
 		public: {
-			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com',
-			googleAdsense: {
-				id: process.env.GOOGLE_ADSENSE_ID || ''
-			}
+			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com'
 		},
 	},
 	vue: {
