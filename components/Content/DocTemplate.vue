@@ -1,3 +1,5 @@
+
+
 <template>
 	<ContentDoc>
 		<template #default="{ doc }">
@@ -19,7 +21,7 @@
 								</li>
 							</template>
 						</ul>
-
+						<Adsbygoogle />
 					</div>
 					<ContentRenderer
 						class="prose list-none lg:prose-base prose-sm prose-slate dark:prose-invert blog-link px-2 flex-grow"

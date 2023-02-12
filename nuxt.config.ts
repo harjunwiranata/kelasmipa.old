@@ -7,7 +7,8 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		'@nuxtjs/robots',
 		'nuxt-simple-sitemap',
-		'nuxt-vuefire'],
+		'nuxt-vuefire',
+		'@nuxtjs/google-adsense'],
 	colorMode: {
 		classSuffix: ''
 	},
@@ -29,7 +30,7 @@ export default defineNuxtConfig({
 				searchDepth: 3,
 			},
 			remarkPlugins: ['remark-math'],
-			rehypePlugins: [['rehype-katex', {output: "html"}], 'katex/dist/contrib/mhchem.js'],
+			rehypePlugins: [['rehype-katex', {output: "htmlyar"}], 'katex/dist/contrib/mhchem.js'],
 		},
 		highlight: {
 			theme: "dracula-soft",
@@ -55,7 +56,11 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com',
-		}
+			googleAdsense: {
+				id: process.env.GOOGLE_ADSENSE_ID,
+				testMode: process.env.GOOGLE_ADSENSE_TEST_MODE === 'true'
+			}
+		},
 	},
 	vue: {
 		compilerOptions: {
