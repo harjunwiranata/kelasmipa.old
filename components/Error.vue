@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 // components
-const PageWrapper = resolveComponent('PageWrapper')
 
 // compiler macro
 const props = defineProps({
@@ -21,7 +20,7 @@ const errorsMap: {
   '400': 'Bad Request',
   '401': 'Unauthorized',
   '403': 'Forbidden',
-  '404': 'Not Found',
+  '404': 'Halaman yang anda cari tidak tersedia, silahkan kembali ke halaman utama',
 }
 const error = computed(() => {
   const { code } = props
@@ -33,12 +32,12 @@ const error = computed(() => {
 </script>
 
 <template>
-  <component :is="props.wrap ? PageWrapper : 'div'"
+  <component :is="'div'"
     :class="props.wrap ? 'flex flex-col items-center justify-center' : ''">
     <h1 class="text-center mb-6 leading-3">
       <span class="font-bold text-8xl block">{{ error.code }}</span>
       <span class="block italic">{{ error.message }}</span>
     </h1>
-    <Button text="Home" to="/" size="sm" />
+    <NuxtLink to="/"><button>Home</button></NuxtLink>
   </component>
 </template>

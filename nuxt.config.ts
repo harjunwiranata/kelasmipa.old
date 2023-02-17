@@ -9,7 +9,8 @@ export default defineNuxtConfig({
 		'nuxt-simple-sitemap',
 		'nuxt-vuefire',
 		'@nuxtjs/google-adsense',
-		'@dargmuesli/nuxt-cookie-control'],
+		'@dargmuesli/nuxt-cookie-control',
+		'@nuxtjs/device'],
 	colorMode: {
 		classSuffix: ''
 	},

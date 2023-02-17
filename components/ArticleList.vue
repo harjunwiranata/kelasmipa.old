@@ -25,7 +25,7 @@ const props = defineProps(['root', 'title', 'filter'])
         <NuxtLink :to="article._path">
           <div
             class="flex mb-3 cursor-default hover:no-underline w-full p-2 md:p-4 lg:p-6 lg:space-x-6 rounded border border-sub hover:border-accent">
-            <div class="max-w-24 mr-4 my-auto hidden md:flex">
+            <div class="w-24 mr-4 my-auto hidden md:flex">
               <img src="/icon.png" class="object-cover">
             </div>
             <div class="flex flex-col flex-grow">
