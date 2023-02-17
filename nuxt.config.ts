@@ -47,17 +47,14 @@ export default defineNuxtConfig({
 				children: "window.dataLayer = window.dataLayer || []\; function gtag(){dataLayer.push(arguments)\;} gtag('js', new Date())\; gtag('config', 'G-S0SBT7P649')\;"
 			}
 			]
-		}
+		},
+
 	},
 	runtimeConfig: {
 		public: {
 			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com'
 		},
-	},
-	vue: {
-		compilerOptions: {
-			isCustomElement: ((tag) => ["Annotation"].includes(tag))
-		}
+
 	},
 	nitro: {
     prerender: {

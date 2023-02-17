@@ -1,5 +1,5 @@
 <template>
     <div>
-        <LazyAdsbygoogle />
+        <LazyAdsbygoogle/>
     </div>
 </template>

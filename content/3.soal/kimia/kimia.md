@@ -1,7 +1,7 @@
 # Soal Kimia Kelas 10 Konfigurasi Elektron
 ## Jumlah elektron valensi
 _Unsur-unsur di bawah ini yang memiliki enam elektron valensi adalah.._
-::pilihan-ganda{grid}
+::pilihan-ganda{grid jawaban="A"}
 #A
 $\ce{^{8}O}$
 #B
@@ -12,9 +12,6 @@ $\ce{^{6}C}$
 $\ce{^{14}Si}$
 #E
 $\ce{^{11}Na}$
-::
-::kunci
-   A. $\ce{^{8}O}$
 ::
 
 ::pembahasan

@@ -11,12 +11,14 @@ const props = defineProps(['root', 'title', 'filter'])
       <div class="flex flex-col justify-between md:flex-row px-2 lg:px-0 mb-3 lg:ml-2">
         <h1 class=" text-2xl font-bold ">{{ title }}</h1>
         <div class="">
+          <ClientOnly>
           <div class="flex justify-around flex-col md:flex-row" v-if="filter">
             <span class="text-base mr-3">
               Filter:
             </span>
             <FormSelectBox />
           </div>
+        </ClientOnly>
         </div>
       </div>
       <section v-for="article in list" :key="article._path" class="px-2 lg:px-0">
