@@ -29,10 +29,7 @@ export default defineNuxtConfig({
 			remarkPlugins: ['remark-math'],
 			rehypePlugins: [['rehype-katex', {output: "html"}], 'katex/dist/contrib/mhchem.js'],
 		},
-		highlight: {
-			theme: "dracula-soft",
-		},
-		locales: ['id']
+		locales: ['id-ID']
 	},
 	css: [
 		'~/assets/css/style.css',
@@ -55,7 +52,6 @@ export default defineNuxtConfig({
 		public: {
 			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://kelasmipa.com'
 		},
-
 	},
 	nitro: {
     prerender: {

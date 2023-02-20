@@ -4,7 +4,7 @@ const props = defineProps(['links'])
 
 <template>
     <ClientOnly>
-        <div v-if="$device.isMobileOrTablet" class="w-full p-5 border border-sub rounded-md bg-slate-200 dark:bg-slate-600 ">
+        <div v-if="$device.isMobileOrTablet" class="w-full p-5 border mx-auto border-sub rounded-md bg-slate-200 dark:bg-slate-600 ">
             <p class="text-sm font-bold mb-3">Daftar Isi</p>
             <ul class="space-y-1">
                 <template v-for="(t, k) in links" :key="`toc-item-${k}`">

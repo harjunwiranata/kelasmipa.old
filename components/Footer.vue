@@ -6,9 +6,9 @@
           Kelas MIPA
         </div>
         <div class="text-xs text-gray-600 dark:text-gray-400">
-          Copyright © 2023 <a href="http://twitter.com/harjunwiranata">harjunwiranata</a>. All rights reserved. Made
+          Copyright © 2023 <a href="http://twitter.com/kelasmipa_id">kelasmipa</a>. All rights reserved. Made
           with <span class="text-red-500">❤</span>
-          <div class="flex flex-col md:flex-row space-x-2 items-center md:float-right">
+          <div class="flex flex-col md:flex-row space-x-2 items-center md:float-right mr-4">
             <span class="text-center md:text-right">
               built with <a href="https://github.com/nuxt/nuxt3">NuxtJS</a>
             </span>

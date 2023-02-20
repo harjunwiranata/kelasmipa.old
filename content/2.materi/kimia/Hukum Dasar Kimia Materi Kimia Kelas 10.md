@@ -8,6 +8,8 @@ description: Dalam ilmu kimia, hukum dasar adalah dasar dari pemahaman kita tent
 ## Pendahuluan
 Dalam ilmu kimia, hukum dasar adalah dasar dari pemahaman kita tentang bagaimana alam dan materi berinteraksi. Dari hukum-hukum ini, kita dapat mengeksplorasi alam semesta dan memperoleh pemahaman yang lebih mendalam tentang dunia yang kompleks ini.
 
+::cover{src="kimia-placeholder-by-julia-koblitz.jpg"}
+::
 Dalam artikel ini, kita akan membahas beberapa hukum dasar dalam ilmu kimia dan bagaimana hukum-hukum ini menjelaskan fenomena-fenomena kimia yang terjadi di sekitar kita. Berikut adalah beberapa hukum dasar dalam ilmu kimia:
 
 1. Hukum Kekekalan Massa: Massa dari suatu sistem akan selalu konstan, tidak peduli reaksi kimia atau perubahan apa yang terjadi di dalamnya. Massa dari reaktan sama dengan massa produk yang dihasilkan.

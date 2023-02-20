@@ -3,16 +3,19 @@ import { useFirebaseStorage, useStorageFileMetadata, useStorageFileUrl } from 'v
 import {ref as storageRef} from 'firebase/storage'
 
 
+
 // imageUrl is path inside firebase storage, ex: 'bg-test.jpg'
-const props = defineProps(['imageUrl', 'alt'])
+const props = defineProps(['src', 'alt'])
 
 const storage = useFirebaseStorage()
-const imageRef = storageRef(storage, props.imageUrl || 'placeholder.jpg')
+const imageRef = storageRef(storage, props.src || 'placeholder.jpg')
 const {url} = useStorageFileUrl(imageRef)
 </script>
 
 <template>
 <ClientOnly>
-<img :src="url" :alt="alt">
+    <div class="rounded-lg border-1">
+<img :src="url" :alt="alt || 'gambar ilustrasi'">
+    </div>
 </ClientOnly>
 </template>

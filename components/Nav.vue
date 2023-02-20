@@ -47,6 +47,7 @@ const links = [
 	},
 ];
 const mode = useColorMode()
+
 const changeMode = () => {
 	mode.preference == 'dark' ? mode.preference = 'light' : mode.preference = 'dark'
 }

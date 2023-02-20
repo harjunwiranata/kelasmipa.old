@@ -8,7 +8,7 @@
 				<article class="pt-2 relative flex items-start lg:space-x-10 ">
 					<ContentToC :links="doc.body.toc.links">
 					</ContentToC>
-					<div class="block">
+					<div class="block w-full">
 					<ContentInlineToC :links="doc.body.toc.links"></ContentInlineToC>
 					<ContentRenderer
 						class="prose text-justify list-none lg:prose-base prose-sm prose-slate dark:prose-invert blog-link px-2 flex-grow"
