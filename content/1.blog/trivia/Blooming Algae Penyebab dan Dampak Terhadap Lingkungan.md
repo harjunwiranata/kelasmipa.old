@@ -4,7 +4,7 @@
 
 Pernahkah kalian mendengar tentang _blooming algae_? Jika kalian pergi ke daerah perkotaan dengan air tergenang, maka kemungkinan besar akan terlihat air tersebut berwarna kehijauan. Bukan hanya di dasar, tapi hampir seluruh air berwarna hijau seolah diberi pewarna. Fenomena ini disebabkan oleh **_blooming algae_**. Apa penyebabnya dan bagaimana dampaknya? Mari kita bahas!
 
-::cover{src="Blooming-Algae-di-perairan-sungai.jpg" alt="foto saat fenomena _blooming algae_ terjadi, air sungai berwarna kehijauan"}
+::cover{src="blog/Blooming-Algae-di-perairan-sungai.jpg" alt="foto saat fenomena _blooming algae_ terjadi, air sungai berwarna kehijauan"}
 ::
 
 ## Apa Itu _Blooming Algae_?
