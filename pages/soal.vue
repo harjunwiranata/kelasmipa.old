@@ -14,14 +14,14 @@
 </template>
 
 <script setup>
-const root = ref("materi")
+const root = ref("soal")
 const filtered = ref(false)
 const f = (payload) => {
 	if (filtered.value == false) {
 		root.value = payload
 		filtered.value = true
 	} else {
-		root.value = "materi"
+		root.value = "soal"
 		filtered.value = false
 	}
 	
