@@ -15,6 +15,7 @@ const f = (payload) => {
 
 useHead({
 	title: "Materi - Kelas MIPA",
+	meta: [{name: "description", content: "Materi sesuai Kurikulum mata pelajaran matematika dan IPA (fisika, kimia, dan biologi) untuk siswa SD, SMP, dan SMA"}]
 });
 </script>
 

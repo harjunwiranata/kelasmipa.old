@@ -28,5 +28,6 @@ const f = (payload) => {
 
 useHead({
 	title: "Kelas MIPA",
+	meta: [{name: "description", content: "Kelas MIPA, berbagi informasi, materi dan bersama berlatih soal dengan pemabahasan yang detail untuk membantu siswa-siswi belajar"}]
 });
 </script>

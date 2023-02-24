@@ -44,9 +44,12 @@ export default defineNuxtConfig({
 			{
 				children: "window.dataLayer = window.dataLayer || []\; function gtag(){dataLayer.push(arguments)\;} gtag('js', new Date())\; gtag('config', 'G-S0SBT7P649')\;"
 			}
-			]
+			],
+			meta: [{
+				"http-equiv": "content-language",
+				content: "id-id"
+			}]
 		},
-
 	},
 	runtimeConfig: {
 		public: {

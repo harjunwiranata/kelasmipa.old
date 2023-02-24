@@ -28,5 +28,6 @@ const f = (payload) => {
 }
 useHead({
 	title: "Latihan Soal - Kelas MIPA",
+	meta: [{name: "description", content: "Latihan soal dengan pemabahasan yang detail untuk membantu siswa-siswi SD, SMP, dan SMA belajar"}]
 });
 </script>

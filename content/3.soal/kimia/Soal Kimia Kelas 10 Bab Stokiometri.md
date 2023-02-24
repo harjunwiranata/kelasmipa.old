@@ -1,4 +1,6 @@
 # Soal Kimia Kelas 10 Konfigurasi Elektron
+Pelajaran Kimia kelas 10 Semester 2 mempelajari tentang konfigurasi elektron. Ini merupakan bagian penting dari pelajaran kimia untuk bisa memudahkan pemahaman di pelajaran selanjutnya. Berikut beberapa contoh soal dan pembahasan tentang Konfigurasi Elektron.
+
 ## Jumlah elektron valensi
 _Unsur-unsur di bawah ini yang memiliki enam elektron valensi adalah.._
 ::pilihan-ganda{grid jawaban="A"}
