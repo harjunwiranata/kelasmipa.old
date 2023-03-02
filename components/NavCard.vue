@@ -13,7 +13,7 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
 
 <template>
     <section class="max-w-4xl mx-auto lg:pt-12 pt-6">
-        <div class="grid grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 px-2">
             <template v-for="(b, i) in blogNav[0]?.children" :key="`blogNavItem-${b._path}-${i}`">
                     <div class="px-6 py-3 cursor-default rounded-lg border-2 border-sub hover:border-accent"
                         @click="$emit('filter', b._path)">

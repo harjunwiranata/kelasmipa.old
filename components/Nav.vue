@@ -1,5 +1,5 @@
 <template>
-	<header class="flex items-center justify-between h-20 px-[3%] lg:px-[15%]">
+	<header class="flex items-center justify-between h-20 px-[3%] lg:px-[15%] sticky top-0 z-30 dark:bg-dark bg-white">
 		<NuxtLink to="/" class="font-bold text-2xl lg:text-4xl">
 			Kelas <span class="text-primary">MIPA</span>
 		</NuxtLink>
@@ -33,17 +33,17 @@ const links = [
 	{
 		name: "Blog",
 		icon: "carbon:blog",
-		link: "/",
+		link: "#blog",
 	},
 	{
 		name: "Materi",
 		icon: "carbon:book",
-		link: "/materi",
+		link: "#materi",
 	},
 	{
 		name: "Soal",
 		icon: "carbon:calculation",
-		link: "/soal",
+		link: "#soal",
 	},
 ];
 const mode = useColorMode()
@@ -54,8 +54,4 @@ const changeMode = () => {
 
 </script>
 
-<style scoped>
-.nav-link.router-link-active.router-link-exact-active {
-	@apply text-primary;
-}
-</style>
+

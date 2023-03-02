@@ -20,16 +20,7 @@ useHead({
 </script>
 
 <template>
-	<section class="lg:px-[15%] px-[5%]">
-
-		<Background />
-		<h1 class="lg:text-5xl text-2xl leading-normal font-semibold text-center">
-			Sumber Materi
-		</h1>
-		<h1 class="lg:text-6xl text-4xl text-center leading-normal font-bold rainbow-text">
-			Matematika dan IPA
-		</h1>
-	</section>
+	<h4 class="text-xl font-bold px-2">MATERI</h4>
 	<NavCard root="materi" @filter="p => {f(p)}" :active-filter="root"/>
 	<ArticleList :root="root" title="materi"/>
 </template>
